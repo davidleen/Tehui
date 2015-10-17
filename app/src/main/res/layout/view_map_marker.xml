@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/bg_map_window_info"
+
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal"
+            android:text="桥亭活鱼小镇"
+            android:id="@+id/name"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_small"
+            android:text="银行优惠:3"
+            android:id="@+id/bankCount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_small"
+            android:text="商家优惠:2"
+            android:id="@+id/shopCount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="查看\n路线"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_white"
+        android:background="@color/bg_color"
+        android:layout_height="wrap_content"
+          />
+
+</LinearLayout>

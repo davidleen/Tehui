@@ -1,0 +1,46 @@
+<resources>
+
+
+
+
+    <color name="app_background">#f1f3f5</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_gray">#cccccc</color>
+    <color name="text_background_red">#ff0000</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="text_black">#3F3E8E</color>
+    <color name="text_color_blue">#1699dd</color>
+
+
+
+    <color name="text_color_normal">#3f4042</color>
+    <color name="blue_text_line">#0077EC</color>
+
+
+    <color name="color_purple">#7A209D</color>
+    <color name="color_purple_light">#9957DE</color>
+    <color name="text_color_gray">#a5abaf</color>
+    <color name="text_red">#ff0000</color>
+    <color name="bg_color">#23c5e8</color>
+    <color name="bg_color_light">#24d2dd</color>
+
+
+    <color name="text_color_hint">#999999</color>
+
+    <color name="color_input_focus_border">#4fc1e9</color>
+    <color name="color_input_border">#44444444</color>
+    <color name="bg_gray">#cccccc</color>
+    <color name="bg_color_green">#22c064</color>
+    <color name="bg_color_green_pressed">#1fac5a</color>
+
+
+    <color name="bg_color_blue_button">#30c7e7</color>
+    <color name="bg_color_blue_button_pressed">#1fac5a</color>
+    <color name="bg_transparent_gray">#00888888</color>
+    <color name="bg_transparent">#00000000</color>
+
+    <color name="bg_main_bar">#f7f7f7</color>
+    <color name="text_color_tab">#ffffff</color>
+    <color name="text_color_tab_selected">#aae3f4</color>
+</resources>

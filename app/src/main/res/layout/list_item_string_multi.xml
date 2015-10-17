@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:gravity="center_vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+
+<TextView
+    android:gravity="left"
+    android:padding="10dp"
+    android:text="所有银行"
+    android:id="@+id/condition"
+
+    android:layout_marginLeft="30dp"
+
+    android:textSize="@dimen/text_size_normal"
+    android:textColor="@color/text_color_black_gray_selector"
+    android:layout_width="0dp" android:layout_height="wrap_content"
+    android:layout_weight="1"
+      >
+
+</TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:src="@drawable/icon_select_selector"
+        android:layout_marginRight="20dp"
+        android:id="@+id/checkBox" />
+
+
+</LinearLayout>

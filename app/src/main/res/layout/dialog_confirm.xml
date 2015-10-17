@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+
+    android:background="@drawable/bg_white_rectangle"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="您当前位置是"
+    android:id="@+id/title"
+
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal"
+
+         />
+    <TextView
+
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:gravity="center"
+        android:text="福州"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_large"
+        android:id="@+id/message"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/icon_divider"></View>
+    <LinearLayout
+        android:layout_width="300dp"
+
+        android:layout_marginTop="1dp"
+        android:layout_height="50dp">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="手动调整"
+        android:gravity="center"
+
+        android:id="@+id/btn_no"
+        android:textColor="@color/text_color_black_presser"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_weight="1"
+         />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_divider"></View>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+
+        android:layout_marginLeft="1dp"
+        android:textColor="@color/bg_color_presser"
+        android:textSize="@dimen/text_size_normal"
+        android:text="是的"
+        android:id="@+id/btn_yes"
+
+   />
+
+
+    </LinearLayout>
+</LinearLayout>

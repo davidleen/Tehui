@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="小杯升大杯"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_normal"
+            android:id="@+id/couponName" />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+            android:textColor="@color/text_color_gray"
+        android:text="截止日期:"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="15.11.30"
+            android:textColor="@color/text_color_gray"
+            android:id="@+id/endDate" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已被领"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/text_background_red"
+            android:id="@+id/giveCount" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="份，被消费"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/text_background_red"
+            android:id="@+id/useCount" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="份"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/period"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/text_color_gray"
+            android:layout_weight="1"
+
+            />
+</LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" tools:context="com.davidleen29.tehui.frags.FriendFragment">
+
+    <com.davidleen29.tehui.widget.HeaderView   android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:tabTitle="所有,求卡,求约"
+        app:rightIcon1="@drawable/icon_edit_presser"
+        app:leftIcon="@mipmap/icon_photo_small"
+
+        />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/swipe_container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="7dp"
+        android:divider="@drawable/icon_divider"
+        android:id="@+id/listView"
+        android:layout_gravity="center" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

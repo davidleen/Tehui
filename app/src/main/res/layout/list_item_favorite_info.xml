@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_header"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_circle_check_selector"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/item_header"
+            android:text="1个月前收藏"
+            />
+
+    </LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg_selector"
+    android:gravity="center_vertical"
+
+    android:padding="10dp"
+      >
+
+
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/icon_circle_check_selector"/>
+
+
+    <ImageView
+
+        android:id="@+id/shopPhoto"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:src="@mipmap/pic_lost_merchant"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp" android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:divider="#7dff90"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+
+
+
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="桥亭活鱼"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal_big"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/coupons"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="交行9折，招行特价，中信8折"
+            android:textColor="#3f4042"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginTop="5dp"
+            android:text="福州市鼓楼区胡同路26号"
+            android:id="@+id/address"
+             />
+
+
+
+    </LinearLayout>
+
+
+     <TextView
+         android:id="@+id/shopMap"
+         android:layout_width="wrap_content"
+         android:drawableTop="@mipmap/icon_site"
+         android:text="4.4km"
+
+         android:textColor="#999999"
+         android:gravity="center"
+         android:textSize="12sp"
+         android:layout_height="wrap_content" />
+
+</LinearLayout>
+</LinearLayout>

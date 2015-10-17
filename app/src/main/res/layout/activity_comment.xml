@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.davidleen29.tehui.acts.CommentActivity">
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5"
+        app:headTitle="我要吐槽"
+        android:id="@+id/header"
+        />
+
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:clickable="true"
+       android:background="@drawable/list_item_bg_selector"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal"
+        android:text="信息不准"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="@drawable/list_item_bg_selector"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal"
+        android:text="关于我们"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        />
+
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="@drawable/list_item_bg_selector"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal"
+        android:text="银行缺失"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        />
+
+
+    <TextView
+
+        android:id="@+id/title4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+
+        android:padding="15dp"
+
+        android:background="@drawable/list_item_bg_selector"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal"
+        android:text="功能建议"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_input_selector"
+
+        android:gravity="left|top"
+        android:layout_margin="10dp"
+        android:hint="请输入您要反馈给我们的信息"
+        />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_selector"
+        android:textColor="@color/text_white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="提交反馈"
+
+        />
+
+</LinearLayout
+    >

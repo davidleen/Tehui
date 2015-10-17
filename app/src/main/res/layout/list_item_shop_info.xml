@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:padding="5dp"
+
+    android:layout_width="match_parent" android:layout_height="match_parent"
+      >
+
+
+
+    <ImageView
+
+        android:id="@+id/shopPhoto"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:src="@mipmap/pic_lost_merchant"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp" android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:divider="#7dff90"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:text="桥亭活鱼"
+            android:singleLine="true"
+            android:textColor="#3f4042"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/coupons"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="交行9折，招行特价，中信8折"
+            android:textColor="#3f4042"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginTop="5dp"
+            android:text="福州市鼓楼区胡同路26号"
+            android:id="@+id/address"
+             />
+
+
+
+    </LinearLayout>
+
+
+     <TextView
+         android:id="@+id/shopMap"
+         android:layout_width="wrap_content"
+         android:drawableTop="@mipmap/icon_site"
+         android:text="4.4km"
+         android:textColor="#999999"
+         android:gravity="center"
+         android:textSize="12sp"
+         android:layout_height="wrap_content" />
+
+</LinearLayout>

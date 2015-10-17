@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="31dp"
+        android:src="@mipmap/icon_photo_small"
+
+        app:border_color="@color/bg_white"
+        app:border_width="2dp"
+
+        android:id="@+id/userPhoto" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+            <TextView
+                android:id="@+id/commenter"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/bg_color_light"
+                android:text="屌丝1"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/content"
+                android:text="回复"
+                android:layout_height="wrap_content" />
+
+
+        <TextView
+
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.08.08"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+        </LinearLayout>
+
+
+    <ImageView
+
+        android:layout_marginRight="10dp"
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

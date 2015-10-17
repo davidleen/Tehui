@@ -1,0 +1,17 @@
+<resources>
+    <declare-styleable name="HeaderView">
+        <attr name="headTitle" format="string" />
+
+        <attr name="tabTitle" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="rightIcon1" format="color|reference" />
+        <attr name="rightIcon2" format="color|reference" />
+        <attr name="leftIcon" format="color|reference" />
+        <attr name="headTitleLeftIcon" format="color|reference" />
+
+
+
+    </declare-styleable>
+</resources>

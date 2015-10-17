@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.davidleen29.tehui">
+
+
+
+    <!--百度地图需要权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />s
+
+
+    <!-- weixn所需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--press the library sdk  min limit-->
+    <uses-sdk tools:overrideLibrary="com.github.paolorotolo.expandableheightlistview"/>
+    <application
+        android:name=".ThApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".acts.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".acts.FirstOpen"
+            android:parentActivityName=".acts.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.davidleen29.tehui.acts.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".acts.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".acts.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.davidleen29.tehui.acts.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".acts.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".acts.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.davidleen29.tehui.acts.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".acts.Register2Activity"
+            android:parentActivityName=".acts.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.davidleen29.tehui.acts.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".acts.ShopActivity"
+            android:label="@string/title_activity_shop"
+            android:parentActivityName=".acts.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.davidleen29.tehui.acts.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".acts.MyFavorActivity"
+            android:label="@string/title_activity_favor" >
+        </activity>
+        <activity
+            android:name=".acts.MyBagActivity"
+            android:label="@string/title_activity_bag"
+            android:parentActivityName=".acts.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.davidleen29.tehui.acts.BaseActivity" />
+        </activity>
+
+        <!-- =============================================================================================================== -->
+
+
+
+
+        <!-- ========友盟统计  UMENG======================================================================================================= -->
+        <meta-data android:value="55ee4c2ae0f55a6023002e9a" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>
+
+
+        <!-- 百度地图apikey  调试版本
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="9pAYMHwMSgGDMStIx0cDadB1" />-->
+
+
+
+           <!-- 百度地图apikey  正式版本-->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="sWntSuMTuYazq9amiBEpdMsR" />
+
+
+
+        <!--百度定位-->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <!--<intent-filter>-->
+                <!--<action android:name="com.baidu.location.service_v2.2" >-->
+                <!--</action>-->
+            <!--</intent-filter>-->
+        </service>
+           <!-- =============================================================================================================== -->
+
+        <activity
+            android:name=".acts.MerchantDetailActivity"
+            android:label="@string/title_activity_shop_detail" >
+        </activity>
+        <activity
+            android:name=".acts.SetBankActivity"
+            android:label="@string/title_activity_set_bank" >
+        </activity>
+        <activity
+            android:name=".acts.SetCategoryActivity"
+            android:label="@string/title_activity_set_category" >
+        </activity>
+        <activity
+            android:name=".acts.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password" >
+        </activity>
+        <activity
+            android:name=".acts.MyBankActivity"
+            android:label="@string/title_activity_my_bank" >
+        </activity>
+        <activity
+            android:name=".acts.MyCategoryActivity"
+            android:label="@string/title_activity_my_category" >
+        </activity>
+        <activity
+            android:name=".acts.PersonalActivity"
+            android:label="@string/title_activity_personal" >
+        </activity>
+        <activity
+            android:name=".acts.AddMessageActivity"
+            android:label="@string/title_activity_new_message" >
+        </activity>
+        <activity
+            android:name=".acts.SetCityActivity"
+            android:label="@string/title_activity_set_city" >
+        </activity>
+        <activity
+            android:name=".acts.LauncherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".acts.TextEditActivity"
+            android:label="@string/title_activity_text_edit" >
+        </activity>
+        <activity
+            android:name=".acts.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".acts.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name=".acts.CommentActivity"
+            android:label="@string/title_activity_comment" >
+        </activity>
+        <activity
+            android:name=".acts.SexSelectActivity"
+            android:label="@string/title_activity_sex_select" >
+        </activity>
+        <activity
+            android:name=".acts.ShopApplyActivity"
+            android:label="@string/title_activity_shop_apply" >
+        </activity>
+        <activity
+            android:name=".acts.MerchantSearchActivity"
+            android:label="@string/title_activity_merchat_search" >
+        </activity>
+        <activity
+            android:name=".acts.ApplyAcceptActivity"
+            android:label="@string/title_activity_appy_accept" >
+        </activity>
+        <activity
+            android:name=".acts.QRActivity"
+            android:label="@string/title_activity_qr"
+            android:screenOrientation="fullSensor" >
+        </activity>
+        <activity
+            android:name=".acts.QrCaptureActivityActivity"
+            android:label="@string/title_activity_qr_capture" >
+        </activity>
+        <activity
+            android:name=".acts.AddCouponActivity"
+            android:label="@string/title_activity_add_coupon" >
+        </activity>
+        <activity
+            android:name=".acts.CouponOffShellActivity"
+            android:label="@string/title_activity_coupon_off_shell" >
+        </activity>
+        <activity
+            android:name=".acts.TehuiActivity"
+            android:label="@string/title_activity_tehui" >
+        </activity>
+        <activity
+            android:name=".acts.MessageDetailActivity"
+            android:label="@string/title_activity_message_detail"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".acts.UserMessageListActivity"
+            android:label="@string/title_activity_user_mesasge_list" >
+        </activity>
+        <activity
+            android:name=".acts.TestWeixinActivity"
+            android:exported="true"
+            android:label="@string/title_activity_test_weixin" >
+        </activity>
+        <activity android:name=".acts.NewMessageActivity" >
+        </activity>
+        <activity android:name=".acts.SystemMessageActivity" >
+        </activity>
+        <activity
+            android:name=".acts.CouponPeriodActivity"
+            android:label="@string/title_activity_coupon_period" >
+        </activity>
+        <activity
+            android:name=".acts.CouponPeriod2Activity"
+            android:label="@string/title_activity_coupon_period2" >
+        </activity>
+    </application>
+
+</manifest>

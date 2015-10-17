@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/commenter"
+        android:layout_width="wrap_content"
+        android:textColor="@color/bg_color_light"
+        android:text="屌丝1"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:text="回复"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/commentTo"
+        android:layout_width="wrap_content"
+        android:textColor="@color/bg_color_light"
+        android:text="屌丝2"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:text=":"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:id="@+id/commentContent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="煎饼果子切克闹"
+        android:layout_height="wrap_content" />
+</LinearLayout>

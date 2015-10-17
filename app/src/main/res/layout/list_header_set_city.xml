@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/text_gray"
+        android:text="定位城市"
+
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    <com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:numColumns="3"
+        android:background="@color/bg_white"
+        android:listSelector="@null"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/text_gray"
+        android:text="热门城市"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        />
+<com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView
+
+
+    android:layout_width="match_parent"
+    android:id="@+id/hotCity"
+    android:numColumns="3"
+    android:background="@color/bg_white"
+    android:listSelector="@null"
+
+    android:layout_height="wrap_content">
+
+</com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView>
+
+
+</LinearLayout>

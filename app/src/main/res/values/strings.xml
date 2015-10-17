@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">今日卡惠</string>
+
+    <string name="title_activity_first_open">FirstOpen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_shop">ShopActivity</string>
+    <string name="title_activity_banks">BanksActivity</string>
+    <string name="title_activity_favor">FavorActivity</string>
+    <string name="title_activity_bag">BagActivity</string>
+    <string name="title_activity_shop_detail">ShopDetailActivity</string>
+    <string name="title_activity_set_bank">SetBankActivity</string>
+    <string name="title_activity_set_category">SetCategoryActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_my_bank">MyBankActivity</string>
+    <string name="title_activity_my_category">MyCategoryActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_new_message">NewMessageActivity</string>
+    <string name="title_activity_set_city">SetCityActivity</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_activity_text_edit">TextEditActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_sex_select">SexSelectActivity</string>
+    <string name="title_activity_shop_apply">ShopApplyActivity</string>
+    <string name="title_activity_merchat_search">MerchatSearchActivity</string>
+    <string name="title_activity_appy_accept">AppyAcceptActivity</string>
+    <string name="title_activity_qr">QRActivity</string>
+    <string name="title_activity_qr_capture">QrCaptureActivityActivity</string>
+    <string name="title_activity_add_coupon">AddCouponActivity</string>
+    <string name="title_activity_coupon_off_shell">CouponOffShellActivity</string>
+    <string name="weixin_app_id">wx038ffb431c14c4e8</string>
+    <string name="title_activity_tehui">TehuiActivity</string>
+    <string name="title_activity_message_detail">MessageDetailActivity</string>
+    <string name="title_activity_user_mesasge_list">UserMesasgeListActivity</string>
+    <string name="title_activity_test_weixin">TestWeixinActivity</string>
+    <string name="title_activity_coupon_period">CouponPeriodActivity</string>
+    <string name="title_activity_coupon_period2">CouponPeriod2Activity</string>
+</resources>

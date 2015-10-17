@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/bg_white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="left|center"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="2012-12-15"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/text_color_gray"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_red_circle"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/new_system_message"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/text_color_normal"
+        android:text="ceshi "
+        />
+</LinearLayout>

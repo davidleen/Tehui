@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.davidleen29.tehui.acts.SetBankActivity">
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:headTitle="感兴趣的银行"
+        app:rightText="下一步"
+        android:id="@+id/header" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:numColumns="2"
+        android:listSelector="@null"
+
+
+      />
+
+</RelativeLayout>

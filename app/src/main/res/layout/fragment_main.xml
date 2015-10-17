@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="com.davidleen29.tehui.frags.MainFragment">
+
+
+
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:headTitle="优惠商户" app:headTitleLeftIcon="@drawable/icon_head_location"
+        app:rightIcon1="@drawable/icon_shop_selector"
+        app:leftIcon="@drawable/icon_search_selector"
+
+        />
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center"
+        android:id="@+id/ll_tabs"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent" android:layout_height="55dp"
+         >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tab_bank"
+                android:text="所有银行"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text_color_purple_selector"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/icon_arrow_updown_selector"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_divider"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:drawablePadding="5dp"
+                android:id="@+id/tab_type"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_purple_selector"
+                android:text="所有类型"
+                android:gravity="center"
+                android:drawableRight="@drawable/icon_arrow_updown_selector"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_divider"
+            ></View>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:drawablePadding="5dp"
+                android:id="@+id/tab_site"
+                android:textColor="@color/text_color_purple_selector"
+                android:textSize="18sp"
+                android:text="离我最近"
+                android:gravity="center"
+                android:drawableRight="@drawable/icon_arrow_updown_selector"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/icon_divider"
+        android:layout_below="@+id/ll_tabs"
+        ></View>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tabs"
+        android:id="@+id/swipeView"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:footerDividersEnabled="false"
+        android:divider="@drawable/icon_divider"
+        android:dividerHeight="0.5dp"
+       />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ll_tabs"
+      android:layout_alignParentBottom="true"
+      android:visibility="gone"
+      android:layout_marginTop="1dp"
+      android:id="@+id/map_panel"
+      >
+
+
+
+
+  </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/ll_tabs"
+        android:id="@+id/list_conditions"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    <ListView
+
+
+        android:id="@+id/list_sites"
+        android:layout_width="wrap_content"
+
+        android:divider="#ffe5e5e5"
+        android:dividerHeight="1dp"
+        android:layout_height="wrap_content">
+    </ListView>
+
+        <ListView
+
+
+            android:id="@+id/list_banks"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:divider="#ffe5e5e5"
+            android:dividerHeight="1dp"
+
+            android:footerDividersEnabled="false"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <ListView
+
+
+            android:id="@+id/list_categorys"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:divider="#ffe5e5e5"
+            android:dividerHeight="1dp"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

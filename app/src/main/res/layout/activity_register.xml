@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".LoginActivity">
+
+
+
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:headTitle="绑定手机（1/2）"
+
+        android:id="@+id/header"
+
+        />
+
+
+
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_logo_about_us"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="60dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="手机号"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/text_color_normal"
+                        />
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:layout_weight="1"
+                        android:hint="请输入手机号"
+                        android:textColorHint="@color/text_color_hint"
+                        android:background="@drawable/bg_input_selector"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/text_color_normal"
+                        />
+
+                    <View
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginLeft="5dp"
+                       />
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_divider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+
+                    >
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="密码"
+
+
+                        android:textSize="@dimen/text_size_normal"
+
+                        android:textColor="@color/text_color_normal"
+                        />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入密码"
+                        android:id="@+id/edt_password"
+                    android:layout_weight="1"
+                        android:textColorHint="@color/text_color_hint"
+                        android:background="@drawable/bg_input_selector"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/text_size_normal"
+
+                        android:textColor="@color/text_color_normal"
+
+                        />
+                    <ImageView
+                        android:id="@+id/c_password"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/icon_password_selector"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:id="@+id/textView"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:visibility="gone" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="下一步"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_normal"
+                android:id="@+id/nextStep"
+                android:background="@drawable/btn_bg_selector"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+

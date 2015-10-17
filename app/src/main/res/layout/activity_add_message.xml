@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.davidleen29.tehui.acts.AddMessageActivity">
+
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:headTitle="发布消息"
+        app:rightText="发布"
+        android:id="@+id/header"
+        />
+
+    <EditText
+
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="说点什么吧..."
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:layout_below="@+id/header"
+        android:background="@color/bg_white"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/ll_picture1"
+          android:layout_width="100dp"
+
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="80dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/icon_photo_small"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/delete1"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_delete"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/ll_picture2"
+           android:layout_width="100dp"
+
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="80dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/icon_photo_small"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/delete2"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_delete"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+             android:layout_width="100dp"
+            android:id="@+id/ll_picture3"
+
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="80dp"
+                android:src="@mipmap/icon_photo_small"
+                android:layout_margin="10dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/delete3"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_delete"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/addPicture"
+            android:src="@mipmap/icon_add_picture"
+            android:scaleType="center"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

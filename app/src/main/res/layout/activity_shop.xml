@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.davidleen29.tehui.acts.ShopActivity">
+
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:headTitle="我是商家"
+        android:id="@+id/header"
+        app:rightText="扫一扫"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:background="@mipmap/bg_shop"
+        android:id="@+id/ll_shop"
+        android:minHeight="100dp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:src="@mipmap/icon_shop_logo"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/shopLogo"
+             />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shopName"
+
+
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_normal"
+
+                        android:text="麦当劳"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/tab_title_text_color_selector"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="15659169570"
+                        android:drawableLeft="@mipmap/icon_shop_call"
+                        android:drawablePadding="10dp"
+                        android:layout_below="@+id/shopName"
+                        android:layout_alignLeft="@+id/shopName"
+                        android:id="@+id/shopPhone" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_arrow_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+        />
+
+
+
+    <LinearLayout
+
+
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:background="@color/bg_white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:drawablePadding="10dp"
+            android:layout_weight="1"
+           android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/text_color_gray"
+            android:drawableLeft="@mipmap/icon_coupon"
+            android:layout_height="wrap_content"
+            android:text="优惠券"
+
+
+
+            />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/gray_text_color_selector"
+            android:drawableLeft="@mipmap/icon_coupon_off"
+            android:layout_height="wrap_content"
+            android:id="@+id/shellOff"
+            android:text="已下架"
+
+
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/icon_divider"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:divider="@drawable/icon_divider"
+        android:footerDividersEnabled="false"
+        ></com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+        <ImageView
+            android:id="@+id/addCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/icon_add_green_selector"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

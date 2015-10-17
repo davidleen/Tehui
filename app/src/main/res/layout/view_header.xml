@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:minHeight="@dimen/default_actionbar_height"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/bg_color"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_large"
+        android:text=" "
+        android:id="@+id/title"
+        android:drawablePadding="5dp"
+
+        android:textColor="@color/tab_title_text_color_selector"
+        android:layout_centerInParent="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:id="@+id/tabTitle"
+        android:visibility="gone"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tabTitle1"
+           android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/tab_title_text_color_selector"
+            android:text="所有"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tabTitle2"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/tab_title_text_color_selector"
+            android:text="求卡"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tabTitle3"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/tab_title_text_color_selector"
+            android:text="求约"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="@dimen/default_action_bar_button_height"
+        android:layout_height="@dimen/default_action_bar_button_height"
+        android:id="@+id/icon_left"
+
+        android:scaleType="centerInside"
+        android:background="@drawable/icon_mask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_back" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="false">
+        <ImageView
+            android:layout_width="@dimen/default_action_bar_button_height"
+            android:layout_height="@dimen/default_action_bar_button_height"
+            android:id="@+id/icon_right_2"
+            android:visibility="gone"
+            android:background="@drawable/icon_mask"
+            android:scaleType="center"
+            android:src="@mipmap/back" />
+        <ImageView
+            android:layout_width="@dimen/default_action_bar_button_height"
+            android:layout_height="@dimen/default_action_bar_button_height"
+            android:id="@+id/icon_right_1"
+            android:scaleType="center"
+
+            android:background="@drawable/icon_mask"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_action_bar_button_height"
+            android:text="测试"
+            android:gravity="center"
+            android:id="@+id/text_right"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/tab_title_text_color_selector"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.davidleen29.tehui.acts.BanksActivity">
+
+    <com.davidleen29.tehui.widget.HeaderView android:background="#ccc" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:headTitle="我的新消息"
+        android:id="@+id/header"
+        />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:footerDividersEnabled="false"
+        android:divider="@drawable/icon_divider"
+        android:dividerHeight="0.5dp"
+        android:headerDividersEnabled="false"
+        android:layout_height="0dp"></ListView>
+
+
+
+</LinearLayout>
