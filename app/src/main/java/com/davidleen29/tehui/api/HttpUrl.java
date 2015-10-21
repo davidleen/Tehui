@@ -9,7 +9,7 @@ public class HttpUrl {
     public static  final String URL_ENCODING="UTF-8";
 
 
-    public static String IP="123.59.69.223";
+    public static String IP="59.56.25.196";
     public static String port="80";
     public  static
     String BaseUrl="http://"+IP+":"+port+"/HuiyouService";

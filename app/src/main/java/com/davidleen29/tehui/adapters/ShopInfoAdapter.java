@@ -88,7 +88,7 @@ public class ShopInfoAdapter extends AbstractAdapter<Merchant.MerchantInfo> {
             ImageLoader.getInstance().displayImage(data.getImgUrl(), shopPhoto, ImageLoaderHelper.getMerchantDisplayOption());
             address.setText(data.getAddress());
 
-
+//            VMRuntime rum;
 
             if(onMapIconClickListener!=null)
             {
